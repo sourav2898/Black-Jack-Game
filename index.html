@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1> Black Jack</h1>
+            <h2><span id="letsPlay">Lets Play</span></h2>
+        </div>
+        
+        <div class="gamepannel">
+            <div class="you">
+                <div class="player_name">You: <span id="yourScore">0</span></div>
+                <div class="your_cards" id="your_cards">
+                </div>
+            </div>
+            <div class="bot">
+                <div class="player_name">Bot: <span id="botScore">0</span></div>
+                <div class="bot_cards" id="bot_cards"></div>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="hit" onclick="hit()">Hit</button>
+            <button class="stand" onclick="stand()">Stand</button>
+            <button class="deal" onclick="deal()">Deal</button>
+        </div>
+        
+        <div class="scorecard">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"> Wins </th>
+                  <th scope="col"> Lose </th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <tr>
+                  <th id="win">0</th>
+                  <th id="lose">0</th>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
